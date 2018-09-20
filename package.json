@@ -66,20 +66,6 @@
     "snazzy": "^7.0.0",
     "standard": "^11.0.0"
   },
-  "babel": {
-    "presets": [
-      "env",
-      "stage-3"
-    ],
-    "env": {
-      "test": {
-        "plugins": [
-          "istanbul",
-          "rewire"
-        ]
-      }
-    }
-  },
   "standard": {
     "parser": "babel-eslint",
     "ignore": [
