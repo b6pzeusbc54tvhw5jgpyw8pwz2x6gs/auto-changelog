@@ -62,16 +62,8 @@ function filterCommit (commit, release, limit) {
   if (commit.breaking) {
     return true
   }
-  if (semver.valid(commit.subject)) {
-    // Filter out version commits
-    return false
-  }
   if (MERGE_COMMIT_PATTERN.test(commit.subject)) {
     // Filter out merge commits
-    return false
-  }
-  if (release.merges.findIndex(m => m.message === commit.subject) !== -1) {
-    // Filter out commits with the same message as an existing merge
     return false
   }
   if (limit === false) {

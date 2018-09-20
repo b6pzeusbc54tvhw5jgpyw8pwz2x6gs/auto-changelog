@@ -12,7 +12,7 @@ const DEFAULT_OPTIONS = {
   output: 'CHANGELOG.md',
   template: 'compact',
   remote: 'origin',
-  commitLimit: 3,
+  commitLimit: false,
   tagPrefix: ''
 }
 
