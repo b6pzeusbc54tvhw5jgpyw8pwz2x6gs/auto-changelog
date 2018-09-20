@@ -34,6 +34,7 @@ function getOptions (argv, pkg) {
     .option('--starting-commit [hash]', `starting commit to use for changelog generation`)
     .option('--tag-prefix [prefix]', `prefix used in version tags`)
     .option('--include-branch [branch]', `one or more branches to include commits from, comma separated`, str => str.split(','))
+    .option('--include-scope [scope]', `one or more scopes to inculde commits from, comma separated`, str => str.split(','))
     .version(version)
     .parse(argv)
 
